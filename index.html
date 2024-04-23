@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odin-sign-up-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="sidebar">
+        <div class="card-container" id="logo-text">
+            <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="Backsplash of palm tree fronds" class="card-image">
+            <div class="card-body">Odin</div>
+        </div>
+    </div>
+    <div class="container" id="sign-up-form">
+        <div class="section" id="header">
+            <h4>This is not a real online service...</h4>
+            <h4>You know what to do</h4>
+        </div>
+        <div class="section" id="input-form">
+            <h3>Let's do this!</h3>
+            <form action="/somepath.com" method="post" id="user-info">
+                <div>
+                    <label for="first-name">
+                        First Name: 
+                        <strong><span aria-required="required">*</span></strong>
+                        <input 
+                            type="text" 
+                            id="first-name" 
+                            name="user-first-name" 
+                            required>
+                    </label>
+                </div>
+                <div>
+                    <label for="last-name">
+                        First Name
+                        <strong><span aria-required="required">*</span></strong>
+                        <input 
+                            type="text" 
+                            id="last-name" 
+                            name="user-last-name" 
+                            required>
+                    </label>
+                </div>
+                <div>
+                    <label for="mail">
+                        Email
+                        <input 
+                            type="email"
+                            id="mail"
+                            name="user-email">
+                    </label>
+                </div>
+                <div>
+                    <label for="phone">
+                        Phone Number
+                        <input 
+                            type="tel"
+                            id="phone"
+                            name="phone-number">
+                    </label>
+                </div>
+                <div>
+                    <label for="pwd">
+                        Password
+                        <strong><span aria-required="required">*</span></strong>
+                        <input 
+                            type="password" 
+                            id="pwd" 
+                            name="user-pwd" 
+                            required>
+                    </label>
+                </div>
+                <div>
+                    <label for="pwd-confirm">
+                        Confirm Password
+                        <strong><span aria-required="required">*</span></strong>
+                        <input 
+                            type="password" 
+                            id="pwd-confirm" 
+                            name="user-pwd" 
+                            required>
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="section" id="footer">
+            <button type="submit" form="user-info">Create Account</button>
+            <div>
+                <p>Already have an account? <a href="/login-path.com">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
