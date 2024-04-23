@@ -1,0 +1,9 @@
+:root {
+    --main-clr: #596D48;
+    --input-fcs-clr: #000;
+    --required-border-clr: #ffd966;
+    --valid-input-clr: #93c47d;
+    --invalid-input-clr: #e06666;
+    --hdr-ftr-clr: #F3F4F6;
+    --logo-clr: #FFFFFF;
+}
