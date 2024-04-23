@@ -14,3 +14,131 @@
     --hdr-ftr-clr: #F3F4F6;
     --logo-clr: #FFFFFF;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar {
+    width: 34vw;
+    height: 100vh;
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-image {
+    position: absolute;
+    max-width: 34vw;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.card-heading {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    opacity: 0.6;
+    color: white;
+}
+
+#odin-logo{
+    height: 8em;
+}
+
+#logo-text {
+    font-family: "norse-bold";
+    font-size: 6em;
+}
+
+#sign-up-form {
+    height: 100vh;
+    width: 76vw;
+}
+
+#header, #footer {
+    background-color: var(--hdr-ftr-clr);
+    height: 35%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 5rem 0 0 3rem;
+}
+
+#input-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 30%;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+}
+
+.row {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+label {
+    flex-direction: column;
+    padding-right: 3rem;
+}
+
+#footer {
+    flex-direction: column;
+    padding: 1.5rem 0 0 3rem;
+    align-items: start;
+}
